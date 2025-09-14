@@ -302,6 +302,31 @@ section {
       </div>
     </div>
 </section>
+<!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>📞 9064341484 | 📧 <a href="mailto:Sneha.rath.cse-ds.2024@nist.edu" style="color:cyan;">Sneha.rath.cse-ds.2024@nist.edu</a></p>
+    <p>
+      🔗 <a href="https://www.linkedin.com/in/sneha-rath-b41129330" target="_blank">LinkedIn</a> |
+      💻 <a href="https://github.com/Sneharath18" target="_blank">GitHub</a>
+    </p>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Snehaleena Rath. All Rights Reserved.</p>
+    <p>
+      <a href="https://www.linkedin.com/in/sneha-rath-b41129330" target="_blank">LinkedIn</a> |
+      <a href="https://github.com/Sneharath18" target="_blank">GitHub</a>
+    </p>
+  </footer>
+  
   <!-- Three.js Background -->
   <canvas id="bg"></canvas>
 <script src="https://cdn.jsdelivr.net/npm/three@0.155.0/build/three.min.js"></script>
@@ -401,7 +426,7 @@ const planeMaterial = new THREE.MeshBasicMaterial({
 const plane = new THREE.Mesh(planeGeometry, planeMaterial);
 plane.rotation.x = Math.PI/2;
 plane.position.z = -10;
-scene.add(plane);
+scene.add(plane); 
 
 // --- Animate ---
 function animate() {
@@ -452,7 +477,7 @@ window.addEventListener("resize", () => {
 
 /* Individual resume boxes */
 .resume-box {
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.582);
   border-radius: 15px;
   padding: 20px;
   box-shadow: 0 0 20px rgba(0, 255, 255, 0.3), 0 0 30px rgba(255, 0, 255, 0.3);
@@ -523,5 +548,4 @@ window.addEventListener("resize", () => {
 
 /* Reduce section padding globally */
 section {
-  padding: 60px 50px; /* reduced from 80px */
-}
+  padding: 60px 50px; /* reduced from 80px
